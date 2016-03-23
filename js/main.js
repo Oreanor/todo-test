@@ -24,7 +24,7 @@ $(document).ready(function(){
 			$("#hint").css("display","none");
 			addTask(str);
 		}
-		$("#inputtext").val("")
+		$("#inputtext").val("");
 	});
 
 
@@ -36,9 +36,9 @@ $(document).ready(function(){
 		buildList();
 
 		if(reverse==-1){
-			$("#sort").attr("src","img/down.png")
+			$("#sort").attr("src","img/down.png");
 		} else {
-			$("#sort").attr("src","img/up.png")			
+			$("#sort").attr("src","img/up.png")	;		
 		}
 	});
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
 			savedata();
 			buildList();
 
-		})
+		});
 
 		$(".ch1")
 		.change(function(){
