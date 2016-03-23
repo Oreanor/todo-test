@@ -1,0 +1,152 @@
+@bordercolor: #cccccc;
+@lineheight: 30px;
+@padding1: 8px;
+
+
+@wdt1: 440px;
+@wdt2: 80px;
+@wdt3: 80px;
+
+
+body{
+	padding: 20px;
+}
+
+body *{
+	box-sizing: border-box;
+	margin: 0px;
+	position: relative;
+	display: inline-block;
+	font-family: "Arial";
+	font-size: 12px;
+}
+
+#header{
+	display: block;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+#ig{
+	display: block;
+	width: @wdt1+@wdt2+@wdt3+2;
+	font-size: 0px;
+	top: 20px;
+	left: 0px;
+}
+/*--------------topline---------------*/
+#topline{
+	width: 100%;
+	height: @lineheight;
+	top: 0px;
+	left: 0px;
+	font-size: 0px;
+	border: 1px @bordercolor solid;
+	vertical-align: top;
+	font-weight: bold;
+}
+#taskname{
+	width: @wdt1;
+	height: @lineheight;
+	padding: @padding1;
+	font-size: 12px;
+	top:-1px;
+	cursor: pointer;
+}
+
+#complete{
+	width: @wdt2;
+	height: @lineheight;
+	border-left: 1px @bordercolor solid;
+	padding: @padding1;
+	font-size: 12px;
+	top:-1px;
+}
+#deletetask{
+	width: @wdt3;
+	height: @lineheight;
+	padding: 5px 5px;	
+	border-left: 1px @bordercolor solid;
+	text-align: center;
+	font-size: 12px;
+	top:-1px;
+}
+#bDelete{
+	width: 70px;
+	height: 20px;
+	cursor: pointer;
+}
+#sort{
+	position: absolute;
+	right: 10px;
+}
+/*--------------add task---------------*/
+#addlabel{
+
+}
+#inputtask{
+
+	padding-left: @padding1;
+}
+#inputtext{
+	width: 450px;
+}
+#addtask{
+
+	padding-left: @padding1;
+}
+#bAdd{
+	width: 70px;
+	cursor: pointer;
+}
+
+#hint{
+	display: block;
+	color: #ff3333;
+	top: 10px;
+	left: 70px;
+	display: none;
+}
+
+/*--------------entries---------------*/
+#content{
+	width: 100%;
+	font-size: 0px;
+}
+.entry{
+	width: 100%;
+	height: @lineheight;
+	top: 0px;
+	left: 0px;
+	border: 1px @bordercolor solid;
+	border-top: 0px;
+	font-size: 0px;
+	vertical-align: top;
+}
+.ename{
+	width: @wdt1;
+	height: @lineheight;
+	padding: @padding1;
+	vertical-align: top;
+}
+
+.ecomplete{
+	width: @wdt2;
+	height: @lineheight;
+	border-left: 1px @bordercolor solid;
+	padding: @padding1;
+	vertical-align: top;
+	text-align: center;
+}
+.eremove{
+	width: @wdt3;
+	height: @lineheight;
+	vertical-align: top;
+	padding: @padding1;
+	border-left: 1px @bordercolor solid;
+	text-align: center;
+}
+.etext{
+	border: 0px;
+	width: 100%;
+}

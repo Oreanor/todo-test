@@ -1,25 +1,30 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="ToDo test">
+		<meta name="author" content="Sergey Nikonets">
+		<meta name="type" content="test">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div id="header">Task planner</div>
+		<div id="addlabel">New task:</div>
+		<div id="inputtask"><input type="text" id="inputtext"></div>
+		<div id="addtask"><button id="bAdd">Add</button></div>
 
-
-	<meta name="description" content="ToDo test">
-
-	<meta name="author" content="Sergey Nikonets">
-	<meta name="type" content="test">
-
-
-	<title></title>
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-
-
-</head>
-<body>
-	
-
-</body>
+		<div id="hint">Enter the task name first</div>
+		
+		<div id="ig">
+			<div id="topline">
+				<div id="taskname">Task name <img src="img/down.png" id="sort"></div>
+				<div id="complete">Complete</div>
+				<div id="deletetask"><button id="bDelete">Remove</button></div>		
+			</div>
+			<div id="content"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
